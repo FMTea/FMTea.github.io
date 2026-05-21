@@ -5,7 +5,7 @@
     <link>http://localhost:1313/publication_types/</link>
       <atom:link href="http://localhost:1313/publication_types/index.xml" rel="self" type="application/rss+xml" />
     <description>Publication_types</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language>
+    <generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language>
     <image>
       <url>http://localhost:1313/media/icon_hu_f70d1b6f0f7f040b.png</url>
       <title>Publication_types</title>

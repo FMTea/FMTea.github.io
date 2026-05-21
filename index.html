@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: April 19, 2026 --><html lang="en-us" dir="ltr"
+<!-- Last Published: May 21, 2026 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system"
       data-hbb-relurl="/">
   
@@ -8,7 +8,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="Hugo Blox Builder 0.10.0" />
+  <meta name="generator" content="Hugo Blox Kit 0.12.0" />
 
   
   
@@ -27,6 +27,7 @@
 
 
   
+
 
 
 
@@ -201,229 +202,41 @@
   
   
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-primary-100: oklch(0.93 0.034 272.788);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-primary-200: oklch(0.87 0.065 274.039);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-primary-300: oklch(0.785 0.115 274.713);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-primary-400: oklch(0.673 0.182 276.935);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-primary-50: oklch(0.962 0.018 272.314);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-primary-500: oklch(0.585 0.233 277.117);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-primary-600: oklch(0.511 0.262 276.966);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-primary-700: oklch(0.457 0.24 277.023);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-primary-800: oklch(0.398 0.195 277.366);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-primary-900: oklch(0.359 0.144 278.697);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-primary-950: oklch(0.257 0.09 281.288);
     
     
-    /* Also set the legacy RGB vars to a fallback (500 shade) to prevent breakage 
-       in case something accesses the raw -rgb var directly, though unlikely */
+    
     --hb-primary-500-rgb: 128 128 128; 
   
 
@@ -441,229 +254,41 @@
   
   
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-secondary-100: oklch(0.932 0.032 255.585);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-secondary-200: oklch(0.882 0.059 254.128);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-secondary-300: oklch(0.809 0.105 251.813);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-secondary-400: oklch(0.707 0.165 254.624);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-secondary-50: oklch(0.97 0.014 254.604);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-secondary-500: oklch(0.623 0.214 259.815);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-secondary-600: oklch(0.546 0.245 262.881);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-secondary-700: oklch(0.488 0.243 264.376);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-secondary-800: oklch(0.424 0.199 265.638);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-secondary-900: oklch(0.379 0.146 265.522);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-secondary-950: oklch(0.282 0.091 267.935);
     
     
-    /* Also set the legacy RGB vars to a fallback (500 shade) to prevent breakage 
-       in case something accesses the raw -rgb var directly, though unlikely */
+    
     --hb-secondary-500-rgb: 128 128 128; 
   
 
@@ -672,16 +297,16 @@
 
 
 
---color-background: #ffffff;
---color-foreground: #111827;
+--hb-color-background: #ffffff;
+--hb-color-foreground: #111827;
 
 
---color-header-bg: #f1f5f9;
---color-header-fg: #0f172a;
+--hb-color-header-bg: #f1f5f9;
+--hb-color-header-fg: #0f172a;
 
 
---color-footer-bg: #f3f4f6;
---color-footer-fg: #0f172a;
+--hb-color-footer-bg: #f3f4f6;
+--hb-color-footer-fg: #0f172a;
 
     
   }
@@ -709,229 +334,41 @@
   
   
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-primary-100: oklch(0.932 0.032 255.585);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-primary-200: oklch(0.882 0.059 254.128);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-primary-300: oklch(0.809 0.105 251.813);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-primary-400: oklch(0.707 0.165 254.624);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-primary-50: oklch(0.97 0.014 254.604);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-primary-500: oklch(0.623 0.214 259.815);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-primary-600: oklch(0.546 0.245 262.881);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-primary-700: oklch(0.488 0.243 264.376);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-primary-800: oklch(0.424 0.199 265.638);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-primary-900: oklch(0.379 0.146 265.522);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-primary-950: oklch(0.282 0.091 267.935);
     
     
-    /* Also set the legacy RGB vars to a fallback (500 shade) to prevent breakage 
-       in case something accesses the raw -rgb var directly, though unlikely */
+    
     --hb-primary-500-rgb: 128 128 128; 
   
 
@@ -949,229 +386,41 @@
   
   
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-secondary-100: oklch(0.953 0.051 180.801);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-secondary-200: oklch(0.91 0.096 180.426);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-secondary-300: oklch(0.855 0.138 181.071);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-secondary-400: oklch(0.777 0.152 181.912);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-secondary-50: oklch(0.984 0.014 180.72);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-secondary-500: oklch(0.704 0.14 182.503);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-secondary-600: oklch(0.6 0.118 184.704);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-secondary-700: oklch(0.511 0.096 186.391);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-secondary-800: oklch(0.437 0.078 188.216);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-secondary-900: oklch(0.386 0.063 188.416);
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
+      
       --color-secondary-950: oklch(0.277 0.046 192.524);
     
     
-    /* Also set the legacy RGB vars to a fallback (500 shade) to prevent breakage 
-       in case something accesses the raw -rgb var directly, though unlikely */
+    
     --hb-secondary-500-rgb: 128 128 128; 
   
 
@@ -1180,16 +429,16 @@
 
 
 
---color-background: #0f172a;
---color-foreground: #f8fafc;
+--hb-color-background: #0f172a;
+--hb-color-foreground: #f8fafc;
 
 
---color-header-bg: #0f172a;
---color-header-fg: #f8fafc;
+--hb-color-header-bg: #0f172a;
+--hb-color-header-fg: #f8fafc;
 
 
---color-footer-bg: #111827;
---color-footer-fg: #e5e7eb;
+--hb-color-footer-bg: #111827;
+--hb-color-footer-fg: #e5e7eb;
 
     
   }
@@ -1208,7 +457,23 @@
   
   
   
+
   
+  
+
+  
+  
+    
+  
+  
+    
+  
+    
+  
+
+  
+  
+
   
   
   
@@ -1218,10 +483,6 @@
   
 
 
-  
-
-  
-  
   
 
   
@@ -1353,51 +614,273 @@
 
   
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   
   
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <style>
-    :root {
-       
-      --hb-font-size-base: 1rem;
-      --hb-font-size-scale: 1.25;
+    
+    
+    
+    
+    
       
-       
-      --hb-radius: 0.5rem;
-      --hb-spacing-base: 1rem;
-      --hb-spacing-section: 4rem;
-    }
     
     
-    @font-face {
-      font-family: 'Inter var';
-      font-style: normal;
-      font-weight: 100 900;
-      font-display: swap;
-      src: url(/dist/font/Inter.var.woff2) format(woff2);
-    }
     
-  </style>
+  
+  
+
+  
+  
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+    
+    
+    
+  
+  
+
+  
+  
+  
+  
+  
+  
+    
+    
+    
+    
+    
+      
+    
+    
+    
+  
+  
+
+  
+  
+    
+
+
+
+
+  
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        
+<style>
+  @font-face {
+    font-family: 'Inter';
+    src: local('Inter'), url('/dist/font/Inter.var.woff2') format('woff2');
+    font-weight: 100 900;
+    font-display: swap;
+  }
+</style>
+        
+      
+    
+  
+
+  
+    
+      
+      
+    
+  
+
+  
+    
+      
+      
+        
+        
+        
+        
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        
+<style>
+  @font-face {
+    font-family: 'JetBrains Mono';
+    src: local('JetBrains Mono'), url('/dist/font/JetBrainsMono.var.ttf') format('truetype');
+    font-weight: 100 900;
+    font-display: swap;
+  }
+</style>
+        
+      
+    
+  
+
+  
+
+
+
+
+
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+  :root {
+     
+    --hb-font-heading: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --hb-font-body: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --hb-font-code: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    --hb-font-nav: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+     
+    --hb-font-weight-heading: 600;
+    --hb-font-weight-body: 400;
+    --hb-font-weight-body-bold: 500;
+
+     
+    --hb-font-leading-heading: 1.2;
+    --hb-font-leading-body: 1.6;
+    --hb-font-leading-code: 1.5;
+
+     
+    --hb-font-tracking-heading: -0.02em;
+    --hb-font-tracking-body: 0;
+    --hb-font-tracking-caps: 0.05em;
+
+     
+    --hb-font-size-base: 1rem;
+    --hb-font-size-sm: 0.875rem;
+    --hb-font-size-lg: 1.125rem;
+
+     
+    --hb-font-family-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  }
+</style>
+
+  
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+
+
+<style>
+  :root {
+     
+    --hb-radius: 0.5rem;
+
+     
+    --hb-spacing-base: 1rem;
+    --hb-spacing-section: 4rem;
+  }
+</style>
+
 
   
 
@@ -1466,43 +949,15 @@
     
     
       
+        
       
+        
       
+        
       
+        
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    
-  
-    
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    
-  
-    
-    
+        
       
       
       
@@ -1523,43 +978,15 @@
     
     
       
+        
       
+        
       
+        
       
+        
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    
-  
-    
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    
-  
-    
-    
+        
       
       
       
@@ -1580,43 +1007,15 @@
     
     
       
+        
       
+        
       
+        
       
+        
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    
-  
-    
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    
-  
-    
-    
+        
       
       
       
@@ -1636,6 +1035,190 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
       
       
       
@@ -1670,6 +1253,10 @@
 
   
   
+
+
+
+
 
 
 
@@ -1728,7 +1315,7 @@
 
 </head>
 
-  <body class="bg-[var(--color-background)] text-[var(--color-foreground)] page-wrapper" id="top">
+  <body class="bg-[var(--hb-color-background)] text-[var(--hb-color-foreground)] page-wrapper" id="top">
     <div id="page-bg"></div>
     <div class="page-header sticky top-0 z-30">
       
@@ -1736,12 +1323,13 @@
       
         
           
-
 <header id="site-header" class="header">
   <nav class="navbar px-3 flex justify-start">
     <div class="order-0 h-full">
       
       <a class="navbar-brand" href="/" title="FMTea 2026">
+        
+        
         
         
         
@@ -1752,7 +1340,7 @@
     <input id="nav-toggle" type="checkbox" class="hidden" />
     <label
       for="nav-toggle"
-      class="order-3 cursor-pointer flex items-center lg:hidden text-[var(--color-header-fg)] lg:order-1">
+      class="order-3 cursor-pointer flex items-center lg:hidden text-[var(--hb-color-header-fg)] lg:order-1">
       <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
         <title>Open Menu</title>
         <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
@@ -1924,7 +1512,7 @@
       
       <button
         aria-label="toggle search"
-        class="inline-block px-3 text-xl text-[var(--color-header-fg)] hover:text-primary-500 cursor-pointer"
+        class="inline-block px-3 text-xl text-[var(--hb-color-header-fg)] hover:text-primary-500 cursor-pointer"
         data-search-toggle>
         <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" fill="currentColor"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
       </button>
@@ -1932,7 +1520,7 @@
 
       
       
-      <div class="px-3 text-[var(--color-header-fg)] hover:text-primary-500
+      <div class="px-3 text-[var(--hb-color-header-fg)] hover:text-primary-500
             [&.active]:font-bold [&.active]:text-primary-500">
         <button class="theme-toggle mt-1" accesskey="t" title="appearance">
           <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -2198,6 +1786,7 @@
       selectedIndex: -1,
       activeFilter: null,
       availableFilters: [],
+      allFilters: [],
       trendingSearches: "[\"Search term 1\",\"Search term 2\"]",
       pagefind: null,
       pagefindModulePath: window.hbb?.assetPaths?.pagefind ?? '/pagefind/pagefind.js',
@@ -2267,6 +1856,62 @@
           }
         });
       },
+
+      buildFilters(filterIndex) {
+        const filters = [];
+
+        if (filterIndex?.type) {
+          Object.entries(filterIndex.type).forEach(([value, count]) => {
+            filters.push({
+              category: 'type',
+              value,
+              label: this.typeLabels[value] || value.charAt(0).toUpperCase() + value.slice(1),
+              count,
+              filterKey: `type:${value}`
+            });
+          });
+        }
+
+        if (filterIndex?.category) {
+          Object.entries(filterIndex.category).forEach(([value, count]) => {
+            filters.push({
+              category: 'category',
+              value,
+              label: value,
+              count,
+              filterKey: `category:${value}`
+            });
+          });
+        }
+
+        if (filterIndex?.difficulty) {
+          Object.entries(filterIndex.difficulty).forEach(([value, count]) => {
+            filters.push({
+              category: 'difficulty',
+              value,
+              label: value,
+              count,
+              filterKey: `difficulty:${value}`
+            });
+          });
+        }
+
+        return filters;
+      },
+
+      mergeFilterCounts(filterCounts) {
+        if (!this.allFilters.length) {
+          return [];
+        }
+
+        return this.allFilters.map((filter) => {
+          const count = filterCounts?.[filter.category]?.[filter.value];
+          return {
+            ...filter,
+            count: typeof count === 'number' ? count : 0
+          };
+        });
+      },
       
       async search() {
         if (!this.query.trim()) {
@@ -2305,72 +1950,14 @@
               };
             })
           );
-          
-          
-          const filterCounts = { type: {}, category: {}, difficulty: {} };
-          
-          this.results.forEach(result => {
-            if (result.filters) {
-              
-              if (result.filters.type) {
-                result.filters.type.forEach(val => {
-                  filterCounts.type[val] = (filterCounts.type[val] || 0) + 1;
-                });
-              }
-              
-              if (result.filters.category) {
-                result.filters.category.forEach(val => {
-                  filterCounts.category[val] = (filterCounts.category[val] || 0) + 1;
-                });
-              }
-              
-              if (result.filters.difficulty) {
-                result.filters.difficulty.forEach(val => {
-                  filterCounts.difficulty[val] = (filterCounts.difficulty[val] || 0) + 1;
-                });
-              }
-            }
-          });
-          
-          console.log('Extracted filter counts from results:', filterCounts);
-          
-          
-          const filters = [];
-          
-          
-          Object.entries(filterCounts.type).forEach(([value, count]) => {
-            filters.push({
-              category: 'type',
-              value,
-              label: this.typeLabels[value] || value.charAt(0).toUpperCase() + value.slice(1),
-              count,
-              filterKey: `type:${value}`
-            });
-          });
-          
-          
-          Object.entries(filterCounts.category).forEach(([value, count]) => {
-            filters.push({
-              category: 'category',
-              value,
-              label: value,
-              count,
-              filterKey: `category:${value}`
-            });
-          });
-          
-          
-          Object.entries(filterCounts.difficulty).forEach(([value, count]) => {
-            filters.push({
-              category: 'difficulty',
-              value,
-              label: value,
-              count,
-              filterKey: `difficulty:${value}`
-            });
-          });
-          
-          this.availableFilters = filters;
+
+          const filterCounts = search.totalFilters || search.filters || {};
+
+          if (this.allFilters.length) {
+            this.availableFilters = this.mergeFilterCounts(filterCounts);
+          } else {
+            this.availableFilters = this.buildFilters(filterCounts);
+          }
           console.log('Final availableFilters array:', this.availableFilters);
           
           
@@ -2389,50 +1976,11 @@
       async loadFilters() {
         
         try {
-          const search = await this.pagefind.search('');
-          console.log('Available Pagefind filters:', search.filters);
-          
-          const filters = [];
-          
-          
-          if (search.filters && search.filters.type) {
-            Object.entries(search.filters.type).forEach(([value, count]) => {
-              filters.push({
-                category: 'type',
-                value,
-                label: value.charAt(0).toUpperCase() + value.slice(1),
-                count,
-                filterKey: `type:${value}`
-              });
-            });
-          }
-          
-          
-          if (search.filters && search.filters.category) {
-            Object.entries(search.filters.category).forEach(([value, count]) => {
-              filters.push({
-                category: 'category',
-                value,
-                label: value,
-                count,
-                filterKey: `category:${value}`
-              });
-            });
-          }
-          
-          
-          if (search.filters && search.filters.difficulty) {
-            Object.entries(search.filters.difficulty).forEach(([value, count]) => {
-              filters.push({
-                category: 'difficulty',
-                value,
-                label: value,
-                count,
-                filterKey: `difficulty:${value}`
-              });
-            });
-          }
-          
+          const filterIndex = await this.pagefind.filters();
+          console.log('Available Pagefind filters:', filterIndex);
+
+          const filters = this.buildFilters(filterIndex);
+          this.allFilters = filters;
           this.availableFilters = filters;
           console.log('Processed filters:', this.availableFilters);
         } catch (error) {
@@ -2598,6 +2146,15 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
   
   
@@ -2610,7 +2167,7 @@
   
 
   
-  <section id="section-resume-biography-3" class="relative overflow-hidden hbb-section blox-resume-biography-3  " >
+  <section id="section-resume-biography-3" class="relative overflow-hidden hbb-section blox-_  " >
     
     <div class="absolute inset-0 -z-10"><div class="absolute inset-0 bg-gradient-to-br from-primary-500/20 via-transparent to-secondary-500/20"></div><div class="absolute top-0 left-1/4 w-96 h-96 bg-primary-500/20 rounded-full filter blur-3xl animate-pulse"></div><div class="absolute bottom-0 right-1/4 w-96 h-96 bg-secondary-500/20 rounded-full filter blur-3xl animate-pulse" style="animation-delay: 2s;"></div></div>
     <div class="home-section-bg " >
@@ -2625,6 +2182,43 @@
 
 
 
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+  
+    
+  
+
+
+
+
+
+
+  
+  
+    
+  
 
 
 
@@ -2658,8 +2252,30 @@
         
         
         
+        
+        
 
         
+
+        
+
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+            
+            
+              
+            
+          
+        
+
         
         <div class="avatar-wrapper mb-4" style="width: 200px; height: 200px;">
           
@@ -2675,21 +2291,73 @@
 
         
         <div class="space-y-3">
-          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 dark:text-white leading-tight">
-            FMTea 2026
-          </h1>
+          
+          
+          
+
+          
+          
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 dark:text-white leading-tight">
+              FMTea 2026
+            </h1>
+          
+          
+          
+          
+          
+          
+          
+          
+            
+              
+            
+          
+          
             <p class="text-2xl font-semibold text-primary-600 dark:text-primary-400">May 19, 2026</p>
           
           
           
-            <p class="text-lg text-gray-700 dark:text-gray-300">
-              <a href="https://conf.researchr.org/home/fm-2026" target="_blank" rel="noopener" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
-              Tokyo, Japan
-              </a>
-            </p>
+          
+          
+            
+          
+          
+            
+            
+            
+              
+              
+                
+              
+              
+              
+                
+              
+            
+            
+            
+            
+              <p class="text-lg text-gray-700 dark:text-gray-300">
+                
+                  
+                  
+                  
+                  
+                    
+                  
+                  <a href="https://conf.researchr.org/home/fm-2026" target="_blank" rel="noopener" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Tokyo, Japan</a>
+                
+              </p>
+            
           
         </div>
 
+        
+        
+        
+        
+          
+        
         
         <div class="flex flex-wrap justify-center gap-4">
           
@@ -2697,46 +2365,104 @@
           
           
           
-          <a href="mailto:fmtea2026@easychair.org"  
-             aria-label="at-symbol"
-              title="E-mail Us"
-             class="w-12 h-12 flex items-center justify-center rounded-full bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400 
-                    shadow-md hover:shadow-xl hover:scale-110 hover:-translate-y-1 
-                    transition-all duration-300 border border-gray-200 dark:border-gray-700">
-            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M16.5 12a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25"/></svg>
-          </a>
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+          
+          
+          
+            
+            
+            
+            <a href="mailto:fmtea2026@easychair.org"  
+               aria-label="at-symbol"
+                title="E-mail Us"
+               class="w-12 h-12 flex items-center justify-center rounded-full bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400 
+                      shadow-md hover:shadow-xl hover:scale-110 hover:-translate-y-1 
+                      transition-all duration-300 border border-gray-200 dark:border-gray-700">
+              <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16.5 12a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25"/></svg>
+            </a>
+          
           
           
           
           
           
             
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
           
-          <a href="https://conf.researchr.org/home/fm-2026" target="_blank" rel="noopener" 
-             aria-label="link"
-              title="27th International Symposium on Formal Methods"
-             class="w-12 h-12 flex items-center justify-center rounded-full bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400 
-                    shadow-md hover:shadow-xl hover:scale-110 hover:-translate-y-1 
-                    transition-all duration-300 border border-gray-200 dark:border-gray-700">
-            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"/></svg>
-          </a>
+          
+          
+            
+            
+            
+              
+            
+            <a href="https://conf.researchr.org/home/fm-2026" target="_blank" rel="noopener" 
+               aria-label="link"
+                title="27th International Symposium on Formal Methods"
+               class="w-12 h-12 flex items-center justify-center rounded-full bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400 
+                      shadow-md hover:shadow-xl hover:scale-110 hover:-translate-y-1 
+                      transition-all duration-300 border border-gray-200 dark:border-gray-700">
+              <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"/></svg>
+            </a>
+          
           
           
           
           
           
             
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
           
-          <a href="https://fme-teaching.github.io/" target="_blank" rel="noopener" 
-             aria-label="link"
-              title="Formal Methods Teaching Committee"
-             class="w-12 h-12 flex items-center justify-center rounded-full bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400 
-                    shadow-md hover:shadow-xl hover:scale-110 hover:-translate-y-1 
-                    transition-all duration-300 border border-gray-200 dark:border-gray-700">
-            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"/></svg>
-          </a>
+          
+          
+            
+            
+            
+              
+            
+            <a href="https://fme-teaching.github.io/" target="_blank" rel="noopener" 
+               aria-label="link"
+                title="Formal Methods Teaching Committee"
+               class="w-12 h-12 flex items-center justify-center rounded-full bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400 
+                      shadow-md hover:shadow-xl hover:scale-110 hover:-translate-y-1 
+                      transition-all duration-300 border border-gray-200 dark:border-gray-700">
+              <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"/></svg>
+            </a>
+          
           
         </div>
+        
       </div>
 
       
@@ -2745,13 +2471,27 @@
         
         
         
+        
+          
+        
+        
+          
+        
+        
         <div class="mb-12">
           <div class="flex items-center gap-4 mb-8">
             <div class="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900/50 rounded-full flex items-center justify-center">
-              <svg class='w-6 h-6 text-primary-600 dark:text-primary-400' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5m6-10.125a1.875 1.875 0 1 1-3.75 0a1.875 1.875 0 0 1 3.75 0m1.294 6.336a6.721 6.721 0 0 1-3.17.789a6.721 6.721 0 0 1-3.168-.789a3.376 3.376 0 0 1 6.338 0"/></svg>
+              <svg class='w-6 h-6 text-primary-600 dark:text-primary-400' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5m6-10.125a1.875 1.875 0 1 1-3.75 0a1.875 1.875 0 0 1 3.75 0m1.294 6.336a6.7 6.7 0 0 1-3.17.789a6.7 6.7 0 0 1-3.168-.789a3.376 3.376 0 0 1 6.338 0"/></svg>
             </div>
             
             
+            
+            
+            
+              
+              
+                
+              
             
             <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white tracking-tight">Formal Methods Teaching Workshop</h2>
           </div>
@@ -2760,7 +2500,6 @@
               This event is a one-day combination of keynote and workshop
 presentations, where various models of teaching are presented and explored, together with
 innovative approaches relevant for educators of Formal Methods.
-
             </div>
           </div>
         </div>
@@ -2768,24 +2507,52 @@ innovative approaches relevant for educators of Formal Methods.
 
         
         
+        
 
+        
+        
+        
+        
+          
         
         
         <div class="mb-16">
           <div class="flex items-center gap-4 mb-8">
             <div class="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900/50 rounded-full flex items-center justify-center">
-              <svg class='w-6 h-6 text-primary-600 dark:text-primary-400' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.26 10.147a60.436 60.436 0 0 0-.491 6.347A48.627 48.627 0 0 1 12 20.904a48.627 48.627 0 0 1 8.232-4.41a60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.57 50.57 0 0 0-2.658-.813A59.905 59.905 0 0 1 12 3.493a59.902 59.902 0 0 1 10.399 5.84a51.39 51.39 0 0 0-2.658.814m-15.482 0A50.697 50.697 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5a.75.75 0 0 0 0 1.5m0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"/></svg>
+              <svg class='w-6 h-6 text-primary-600 dark:text-primary-400' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.26 10.147a60 60 0 0 0-.491 6.347A48.6 48.6 0 0 1 12 20.904a48.6 48.6 0 0 1 8.232-4.41a61 61 0 0 0-.491-6.347m-15.482 0a51 51 0 0 0-2.658-.813A60 60 0 0 1 12 3.493a60 60 0 0 1 10.399 5.84q-1.345.372-2.658.814m-15.482 0A51 51 0 0 1 12 13.489a50.7 50.7 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5a.75.75 0 0 0 0 1.5m0 0v-3.675A55 55 0 0 1 12 8.443m-7.007 11.55A5.98 5.98 0 0 0 6.75 15.75v-1.5"/></svg>
             </div>
+            
+            
+            
+              
+              
+                
+              
             
             <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white tracking-tight">Main important dates</h3>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
             
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             <div class="group h-full flex flex-col bg-gradient-to-br from-white/90 to-primary-50/30 dark:from-gray-800/90 dark:to-primary-900/20 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-transparent hover:border-primary-200 dark:hover:border-primary-800 backdrop-blur-md">
               <div class="flex gap-4">
                 <div class="flex-shrink-0 w-12 h-12 bg-white dark:bg-gray-800 ring-1 ring-gray-200 dark:ring-gray-700 rounded-full flex items-center justify-center shadow-md">
                   
-                    <svg class='w-6 h-6 text-primary-600 dark:text-primary-400' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.26 10.147a60.436 60.436 0 0 0-.491 6.347A48.627 48.627 0 0 1 12 20.904a48.627 48.627 0 0 1 8.232-4.41a60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.57 50.57 0 0 0-2.658-.813A59.905 59.905 0 0 1 12 3.493a59.902 59.902 0 0 1 10.399 5.84a51.39 51.39 0 0 0-2.658.814m-15.482 0A50.697 50.697 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5a.75.75 0 0 0 0 1.5m0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"/></svg>
+                    <svg class='w-6 h-6 text-primary-600 dark:text-primary-400' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.26 10.147a60 60 0 0 0-.491 6.347A48.6 48.6 0 0 1 12 20.904a48.6 48.6 0 0 1 8.232-4.41a61 61 0 0 0-.491-6.347m-15.482 0a51 51 0 0 0-2.658-.813A60 60 0 0 1 12 3.493a60 60 0 0 1 10.399 5.84q-1.345.372-2.658.814m-15.482 0A51 51 0 0 1 12 13.489a50.7 50.7 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5a.75.75 0 0 0 0 1.5m0 0v-3.675A55 55 0 0 1 12 8.443m-7.007 11.55A5.98 5.98 0 0 0 6.75 15.75v-1.5"/></svg>
                   
                 </div>
                 <div class="flex-1 flex-grow">
@@ -2794,16 +2561,33 @@ innovative approaches relevant for educators of Formal Methods.
                     Submission 2026-02-22
                   </p>
                   
-                  <p class="text-gray-700 dark:text-gray-300 text-base"></p>
+                  
+                  
                 </div>
               </div>
             </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             
             <div class="group h-full flex flex-col bg-gradient-to-br from-white/90 to-primary-50/30 dark:from-gray-800/90 dark:to-primary-900/20 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-transparent hover:border-primary-200 dark:hover:border-primary-800 backdrop-blur-md">
               <div class="flex gap-4">
                 <div class="flex-shrink-0 w-12 h-12 bg-white dark:bg-gray-800 ring-1 ring-gray-200 dark:ring-gray-700 rounded-full flex items-center justify-center shadow-md">
                   
-                    <svg class='w-6 h-6 text-primary-600 dark:text-primary-400' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.26 10.147a60.436 60.436 0 0 0-.491 6.347A48.627 48.627 0 0 1 12 20.904a48.627 48.627 0 0 1 8.232-4.41a60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.57 50.57 0 0 0-2.658-.813A59.905 59.905 0 0 1 12 3.493a59.902 59.902 0 0 1 10.399 5.84a51.39 51.39 0 0 0-2.658.814m-15.482 0A50.697 50.697 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5a.75.75 0 0 0 0 1.5m0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"/></svg>
+                    <svg class='w-6 h-6 text-primary-600 dark:text-primary-400' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.26 10.147a60 60 0 0 0-.491 6.347A48.6 48.6 0 0 1 12 20.904a48.6 48.6 0 0 1 8.232-4.41a61 61 0 0 0-.491-6.347m-15.482 0a51 51 0 0 0-2.658-.813A60 60 0 0 1 12 3.493a60 60 0 0 1 10.399 5.84q-1.345.372-2.658.814m-15.482 0A51 51 0 0 1 12 13.489a50.7 50.7 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5a.75.75 0 0 0 0 1.5m0 0v-3.675A55 55 0 0 1 12 8.443m-7.007 11.55A5.98 5.98 0 0 0 6.75 15.75v-1.5"/></svg>
                   
                 </div>
                 <div class="flex-1 flex-grow">
@@ -2812,16 +2596,33 @@ innovative approaches relevant for educators of Formal Methods.
                     Notification 2026-03-15
                   </p>
                   
-                  <p class="text-gray-700 dark:text-gray-300 text-base"></p>
+                  
+                  
                 </div>
               </div>
             </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             
             <div class="group h-full flex flex-col bg-gradient-to-br from-white/90 to-primary-50/30 dark:from-gray-800/90 dark:to-primary-900/20 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-transparent hover:border-primary-200 dark:hover:border-primary-800 backdrop-blur-md">
               <div class="flex gap-4">
                 <div class="flex-shrink-0 w-12 h-12 bg-white dark:bg-gray-800 ring-1 ring-gray-200 dark:ring-gray-700 rounded-full flex items-center justify-center shadow-md">
                   
-                    <svg class='w-6 h-6 text-primary-600 dark:text-primary-400' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.26 10.147a60.436 60.436 0 0 0-.491 6.347A48.627 48.627 0 0 1 12 20.904a48.627 48.627 0 0 1 8.232-4.41a60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.57 50.57 0 0 0-2.658-.813A59.905 59.905 0 0 1 12 3.493a59.902 59.902 0 0 1 10.399 5.84a51.39 51.39 0 0 0-2.658.814m-15.482 0A50.697 50.697 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5a.75.75 0 0 0 0 1.5m0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"/></svg>
+                    <svg class='w-6 h-6 text-primary-600 dark:text-primary-400' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.26 10.147a60 60 0 0 0-.491 6.347A48.6 48.6 0 0 1 12 20.904a48.6 48.6 0 0 1 8.232-4.41a61 61 0 0 0-.491-6.347m-15.482 0a51 51 0 0 0-2.658-.813A60 60 0 0 1 12 3.493a60 60 0 0 1 10.399 5.84q-1.345.372-2.658.814m-15.482 0A51 51 0 0 1 12 13.489a50.7 50.7 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5a.75.75 0 0 0 0 1.5m0 0v-3.675A55 55 0 0 1 12 8.443m-7.007 11.55A5.98 5.98 0 0 0 6.75 15.75v-1.5"/></svg>
                   
                 </div>
                 <div class="flex-1 flex-grow">
@@ -2830,15 +2631,20 @@ innovative approaches relevant for educators of Formal Methods.
                     Camera-ready 2026-03-29
                   </p>
                   
-                  <p class="text-gray-700 dark:text-gray-300 text-base"></p>
+                  
+                  
                 </div>
               </div>
             </div>
+            
             
           </div>
         </div>
         
 
+        
+        
+        
         
         
       </div>
@@ -2917,6 +2723,15 @@ innovative approaches relevant for educators of Formal Methods.
 
 
 
+
+
+
+
+
+
+
+
+
   
   
   
@@ -2929,7 +2744,7 @@ innovative approaches relevant for educators of Formal Methods.
   
 
   
-  <section id="objectives" class="relative  hbb-section blox-markdown  " >
+  <section id="objectives" class="relative  hbb-section blox-_  " >
     
     
     <div class="home-section-bg " >
@@ -2945,11 +2760,17 @@ innovative approaches relevant for educators of Formal Methods.
 
 
 
+
+
+
+
 <div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center px-6">
 
+  
   <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
     🎯 Objectives and Scope
   </div>
+  
 
   
   <div class="prose prose-slate lg:prose-xl dark:prose-invert max-w-prose"><div align="justify">Formal methods originated as a means for the rigorous construction of software systems. While formal methods are increasingly being used in industry in recent years, university curricula are not adapting at the same pace. Some existing formal methods classes interest and challenge students, whereas others fail to ignite student motivation. It is thus important to develop, share, and discuss approaches to effectively teach formal methods to the next generations.</div></div>
@@ -3026,6 +2847,15 @@ innovative approaches relevant for educators of Formal Methods.
 
 
 
+
+
+
+
+
+
+
+
+
   
   
   
@@ -3038,7 +2868,7 @@ innovative approaches relevant for educators of Formal Methods.
   
 
   
-  <section id="organization" class="relative  hbb-section blox-markdown  " >
+  <section id="organization" class="relative  hbb-section blox-_  " >
     
     
     <div class="home-section-bg " >
@@ -3054,11 +2884,17 @@ innovative approaches relevant for educators of Formal Methods.
 
 
 
+
+
+
+
 <div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center px-6">
 
+  
   <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
     👤👤👤 Organization
   </div>
+  
 
   
   <div class="prose prose-slate lg:prose-xl dark:prose-invert max-w-prose"><div align="justify">Event affiliated with FM 2026, the <a href="https://conf.researchr.org/home/fm-2026" target="_blank">27th International Symposium on Formal Methods</a>, and supported by the <a href="https://fme-teaching.github.io/" target="_blank">Teaching Committee</a> of the <a href="https://www.fmeurope.org/" target="_blank">Formal Methods Europe</a> Association.</div>
@@ -3178,6 +3014,15 @@ The University of Queensland, Australia</li>
 
 
 
+
+
+
+
+
+
+
+
+
   
   
   
@@ -3190,7 +3035,7 @@ The University of Queensland, Australia</li>
   
 
   
-  <section id="keynotes" class="relative  hbb-section blox-markdown  " >
+  <section id="keynotes" class="relative  hbb-section blox-_  " >
     
     
     <div class="home-section-bg " >
@@ -3206,11 +3051,17 @@ The University of Queensland, Australia</li>
 
 
 
+
+
+
+
 <div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center px-6">
 
+  
   <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
     🗣️ Keynote Speakers
   </div>
+  
 
   
   <div class="prose prose-slate lg:prose-xl dark:prose-invert max-w-prose"><p><img src="alcino.jpg" width="200"><a href="https://alcinocunha.github.io/" target="_blank"><strong>Prof. Alcino Cunha</strong></a><br>
@@ -3297,6 +3148,15 @@ The University of Queensland, Australia</li>
 
 
 
+
+
+
+
+
+
+
+
+
   
   
   
@@ -3309,7 +3169,7 @@ The University of Queensland, Australia</li>
   
 
   
-  <section id="cfp" class="relative  hbb-section blox-markdown  " >
+  <section id="cfp" class="relative  hbb-section blox-_  " >
     
     
     <div class="home-section-bg " >
@@ -3325,11 +3185,17 @@ The University of Queensland, Australia</li>
 
 
 
+
+
+
+
 <div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center px-6">
 
+  
   <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
     📚 Call for Papers
   </div>
+  
 
   
   <div class="prose prose-slate lg:prose-xl dark:prose-invert max-w-prose"><div align="justify">FMTea 2026 invites high-quality papers reporting on opinions, approaches, and experiences related to the topic of teaching Formal Methods. We welcome papers discussing the successes and failures of various methods, case studies, tools, etc. As self-learning is an emerging aspect of formal methods, we appreciate experiences with online teaching, including experiences with teaching formal methods via MOOCs. A non-exhaustive list of topics of interest for the workshop is as follows:</div>
@@ -3447,6 +3313,15 @@ The University of Queensland, Australia</li>
 
 
 
+
+
+
+
+
+
+
+
+
   
   
   
@@ -3459,7 +3334,7 @@ The University of Queensland, Australia</li>
   
 
   
-  <section id="dates" class="relative  hbb-section blox-markdown  " >
+  <section id="dates" class="relative  hbb-section blox-_  " >
     
     
     <div class="home-section-bg " >
@@ -3475,11 +3350,17 @@ The University of Queensland, Australia</li>
 
 
 
+
+
+
+
 <div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center px-6">
 
+  
   <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
     🗓️ Important Dates
   </div>
+  
 
   
   <div class="prose prose-slate lg:prose-xl dark:prose-invert max-w-prose"><ul>
@@ -3569,6 +3450,15 @@ The University of Queensland, Australia</li>
 
 
 
+
+
+
+
+
+
+
+
+
   
   
   
@@ -3581,7 +3471,7 @@ The University of Queensland, Australia</li>
   
 
   
-  <section id="registration" class="relative  hbb-section blox-markdown  " >
+  <section id="registration" class="relative  hbb-section blox-_  " >
     
     
     <div class="home-section-bg " >
@@ -3597,11 +3487,17 @@ The University of Queensland, Australia</li>
 
 
 
+
+
+
+
 <div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center px-6">
 
+  
   <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
     🔔 Registration
   </div>
+  
 
   
   <div class="prose prose-slate lg:prose-xl dark:prose-invert max-w-prose"><div align="justify">Registration details are available at the main FM 2026 conference site: <a href="https://conf.researchr.org/attending/fm-2026/registration" target="_blank">link</a>. To request a visa support letter, please refer to the following instructions: <a href="https://conf.researchr.org/attending/fm-2026/visa" target="_blank">link</a></div></div>
@@ -3678,6 +3574,15 @@ The University of Queensland, Australia</li>
 
 
 
+
+
+
+
+
+
+
+
+
   
   
   
@@ -3690,7 +3595,7 @@ The University of Queensland, Australia</li>
   
 
   
-  <section id="program" class="relative  hbb-section blox-markdown  " >
+  <section id="program" class="relative  hbb-section blox-_  " >
     
     
     <div class="home-section-bg " >
@@ -3706,20 +3611,34 @@ The University of Queensland, Australia</li>
 
 
 
+
+
+
+
 <div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center px-6">
 
+  
   <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
     📖 Program
   </div>
-
- <div class="prose prose-slate lg:prose-xl dark:prose-invert max-w-prose"><div align="justify"><b>Proceedings</b>:</div>
- <a href="https://link.springer.com/book/9783032267429" target="_blank"><img src="fmtea2026.png"></a>
- Formal Methods Teaching<br>
- 7th Formal Methods Teaching Workshop, FMTea 2026, Tokyo, Japan, May 19, 2026, Proceedings
- </div>
+  
 
   
-  <div class="prose prose-slate lg:prose-xl dark:prose-invert max-w-prose"><div align="justify"><b>List of accepted papers</b>:</div>
+  <div class="prose prose-slate lg:prose-xl dark:prose-invert max-w-prose"><div align="justify"><b>Proceedings</b></div>
+<p><a href="https://link.springer.com/book/9783032267429" target="_blank"><img src="fmtea2026.png"></a>
+<a href="https://link.springer.com/book/9783032267429" target="_blank">Formal Methods Teaching</a><br>
+<a href="https://link.springer.com/book/9783032267429" target="_blank">7th Formal Methods Teaching Workshop, FMTea 2026, Tokyo, Japan, May 19, 2026, Proceedings</a></p>
+<div align="justify"><b>Best Paper Award</b></div>
+<ul>
+<li>Autograding Weakest Precondition Proofs and Dafny Specifications (Graeme Smith and Hunter Whitlock)</li>
+</ul>
+<div align="justify"><b>Distinguished Reviewer Awards</b></div>
+<ul>
+<li>Brijesh Dongol</li>
+<li>Catherine Dubois</li>
+<li>Tim Nelson</li>
+</ul>
+<div align="justify"><b>List of accepted papers</b></div>
 <ul>
 <li>
 <p>Autograding Weakest Precondition Proofs and Dafny Specifications (Graeme Smith and Hunter Whitlock)</p>
@@ -3793,7 +3712,15 @@ The University of Queensland, Australia</li>
 </li>
 <li>17:20 - 17:30: <strong>Closing Remarks</strong></li>
 </ul>
-</div>
+<div align="justify"><b>Photos</b></div>
+<table>
+  <tr><td><img src="001.jpeg"></td><td><img src="002.jpeg"></td></tr>
+  <tr><td><img src="003.jpeg"></td><td><img src="004.jpeg"></td></tr>
+  <tr><td><img src="005.jpeg"></td><td><img src="006.jpeg"></td></tr>
+  <tr><td><img src="007.jpeg"></td><td><img src="008.jpeg"></td></tr>
+  <tr><td><img src="010.jpeg"></td><td><img src="011.jpeg"></td></tr>
+  <tr><td><img src="012.jpeg"></td><td></td></tr>
+</table></div>
 </div>
 
   </section>
@@ -3867,6 +3794,15 @@ The University of Queensland, Australia</li>
 
 
 
+
+
+
+
+
+
+
+
+
   
   
   
@@ -3879,7 +3815,7 @@ The University of Queensland, Australia</li>
   
 
   
-  <section id="history" class="relative  hbb-section blox-markdown  " >
+  <section id="history" class="relative  hbb-section blox-_  " >
     
     
     <div class="home-section-bg " >
@@ -3895,11 +3831,17 @@ The University of Queensland, Australia</li>
 
 
 
+
+
+
+
 <div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center px-6">
 
+  
   <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
     📜 Previous Editions
   </div>
+  
 
   
   <div class="prose prose-slate lg:prose-xl dark:prose-invert max-w-prose"><ul>
@@ -3991,6 +3933,15 @@ The University of Queensland, Australia</li>
 
 
 
+
+
+
+
+
+
+
+
+
   
   
   
@@ -4003,7 +3954,7 @@ The University of Queensland, Australia</li>
   
 
   
-  <section id="contact" class="relative  hbb-section blox-markdown  " >
+  <section id="contact" class="relative  hbb-section blox-_  " >
     
     
     <div class="home-section-bg " >
@@ -4019,11 +3970,17 @@ The University of Queensland, Australia</li>
 
 
 
+
+
+
+
 <div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center px-6">
 
+  
   <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
     📩 Contact
   </div>
+  
 
   
   <div class="prose prose-slate lg:prose-xl dark:prose-invert max-w-prose"><center><em><a href="mailto:fmtea2026@easychair.org">fmtea2026@easychair.org</a></em></center></div>
@@ -4071,14 +4028,64 @@ The University of Queensland, Australia</li>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
-  <p class="powered-by text-center">
+  
     
+  
+  
     
-    © 2026 FMTea 2026.
-  </p>
   
 
+  
+  
+  
+
+
+
+
+
+  <p class="powered-by footer-license-icons text-center pb-2">
+    <a class="inline-flex items-center justify-center gap-2 align-middle" href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+    <a class="inline-flex items-center justify-center gap-2 align-middle" href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <svg class="h-6 w-6 inline-block align-middle text-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true" focusable="false"><path d="M253.8 214.9l-33.2 17.3c-9.4-19.6-25.2-19.9-27.5-19.9-22.1 0-33.2 14.6-33.2 43.8 0 23.6 9.2 43.8 33.2 43.8 14.5 0 24.6-7.1 30.6-21.3l30.6 15.5c-6.2 11.5-25.7 39-65.1 39-22.6 0-74-10.3-74-77 0-58.7 43-77.1 72.6-77.1 30.7 0 52.7 11.9 66 35.9zm143 0l-32.8 17.3c-9.5-19.8-25.7-19.9-27.9-19.9-22.1 0-33.2 14.6-33.2 43.8 0 23.5 9.2 43.8 33.2 43.8 14.4 0 24.6-7.1 30.5-21.3l31 15.5c-2.1 3.8-21.4 39-65.1 39-22.7 0-74-9.9-74-77 0-58.7 43-77.1 72.6-77.1 30.7 0 52.6 11.9 65.6 35.9zM255.6 8C112.7 8 8 123.1 8 256.1 8 394.5 121.6 504.1 255.6 504.1 385.5 504.1 504 403.2 504 256.1 504 118.2 397.4 8 255.6 8zm.9 450.8c-112.5 0-203.7-93-203.7-202.8 0-105.4 85.4-203.3 203.7-203.3 112.5 0 202.8 89.5 202.8 203.3 0 121.7-99.7 202.8-202.8 202.8z"/></svg>
+      <svg class="h-6 w-6 inline-block align-middle text-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true" focusable="false"><path d="M322.9 194.4l0 101.4-28.3 0 0 120.5-77.1 0 0-120.4-28.3 0 0-101.5c0-4.4 1.6-8.2 4.6-11.3 3.1-3.1 6.9-4.7 11.3-4.7l101.9 0c4.1 0 7.8 1.6 11.1 4.7 3.1 3.2 4.8 6.9 4.8 11.3zm-32.5-64.5a34.5 34.5 0 1 1 -69 .8 34.5 34.5 0 1 1 69-.8zM255.6 8C397.4 8 504 118.1 504 256 504 403.1 385.5 504 255.6 504 121.6 504 8 394.5 8 256 8 123.1 112.7 8 255.6 8zm.8 44.7c-118.2 0-203.7 97.9-203.7 203.3 0 109.8 91.2 202.8 203.7 202.8 103.2 0 202.8-81.1 202.8-202.8 .1-113.8-90.2-203.3-202.8-203.3z"/></svg>
+      
+        <svg class="h-6 w-6 inline-block align-middle text-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true" focusable="false"><path d="M255.6 8C395.4 8 504 115.9 504 256 504 403.2 385.5 504 255.6 504 121.1 504 8 393.2 8 256 8 123.1 112.7 8 255.6 8zM63.8 189.1c-7.4 20.4-11.1 42.7-11.1 66.9 0 110.9 92.1 202.4 203.7 202.4 122.4 0 177.2-101.8 178.5-104.1l-93.4-41.6c-7.7 37.1-41.2 53-68.2 55.4l0 38.1-28.8 0 0-38.2c-27.5-.3-52.6-10.2-75.3-29.7l34.1-34.5c31.7 29.4 86.4 31.8 86.4-2.2 0-6.2-2.2-11.2-6.6-15.1-14.2-6-1.8-.1-219.3-97.4zM256.4 52.3C218 52.3 144 61 85.9 145.3l94.8 42.5c10-31.3 40.4-42.9 63.8-44.3l0-38.1 28.8 0 0 38.1c22.7 1.2 43.4 8.9 62 23L303 199.7c-42.7-29.9-83.5-8-70 11.1 53.4 24.1 43.8 19.8 93 41.6l127.1 56.7c4.1-17.4 6.2-35.1 6.2-53.1 0-57-19.8-105-59.3-143.9-39.3-39.9-87.2-59.8-143.6-59.8z"/></svg>
+      
+      
+        <svg class="h-6 w-6 inline-block align-middle text-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true" focusable="false"><path d="M255.6 8C397.4 8 504 118.1 504 256 504 403.1 385.5 504 255.6 504 121.6 504 8 394.5 8 256 8 123.1 112.7 8 255.6 8zm.8 44.7c-118.2 0-203.7 97.9-203.7 203.3 0 109.8 91.2 202.8 203.7 202.8 103.2 0 202.8-81.1 202.8-202.8 .1-113.8-90.2-203.3-202.8-203.3zm94 144.3l0 42.5-180.3 0 0-42.5 180.3 0zm0 79.8l0 42.5-180.3 0 0-42.5 180.3 0z"/></svg>
+      
+    </a>
+  </p>
+
+
+
+
+<p class="powered-by text-center">
+  
+  
+  
+  © 2026 FMTea 2026.
+</p>
 
 
 
@@ -4107,7 +4114,7 @@ The University of Queensland, Australia</li>
       
       
       
-      Made with <a class="underline hover:opacity-100" href="https://hugoblox.com?utm_source=site_footer&utm_medium=referral&utm_campaign=poweredby_oss&utm_content=brand_academic-cv" target="_blank" rel="noopener" data-hbx="poweredby_brand">Hugo Blox Builder</a>.
+      Made with <a class="underline hover:opacity-100" href="https://hugoblox.com?utm_source=site_footer&utm_medium=referral&utm_campaign=poweredby_oss&utm_content=brand_academic-cv" target="_blank" rel="noopener" data-hbx="poweredby_brand">Hugo Blox Kit</a>.
       <a class="inline-flex items-center rounded px-2 py-0.5 border border-current ms-2 text-xs hover:opacity-100"
          href="https://hugoblox.com/templates/academic-cv/start?utm_source=site_footer&amp;utm_medium=referral&amp;utm_campaign=poweredby_oss&amp;utm_content=cta_academic-cv" target="_blank" rel="noopener" data-hbx="poweredby_cta">Build your site →</a>
     </p>  
